@@ -4,6 +4,15 @@
 
   .intro {
 
+    img{
+    //border-radius: 20px;
+    .img-rounded(); //como no le paso parámetro usa el default
+
+    @media (max-width: @phone){
+      width: 100%;
+    }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -19,12 +28,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
+
+    .tecnologia, .ondas{
+      @media(max-width: @phone){
+      display: none;
+      }
+    }
+
+    .auricular{
+      @media(max-width: @phone){
+      width: 100%;
+      }
+    }
+
   }
 
   .musica-nueva {
@@ -58,6 +81,7 @@
       }
 
       .btn {
+        .btn-henry(@btn-bg-color, white);
       }
     }
 
