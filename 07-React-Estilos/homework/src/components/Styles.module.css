@@ -1,0 +1,65 @@
+.temp {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 30%;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  border: solid 1px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 180px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .name {
+    flex-direction: column;
+  }
+}
+
+.head {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+.name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchBarButton {
+  background-color: gray;
+  color: greenyellow;
+  border: solid 1px greenyellow;
+  border-radius: 5px;
+}
+
+.searchBarPH {
+  border: solid 1px gray;
+  border-radius: 5px;
+}
