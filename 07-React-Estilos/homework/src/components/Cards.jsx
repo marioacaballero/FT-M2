@@ -6,7 +6,7 @@ export default function Cards(props) {
   // acá va tu código
   // tip, podés usar un map
   return <div className={style.name}>{props.cities.map((city) => (
-    <Card
+    <div className={style.f}><Card
       key={city.id}
       max={city.main.temp_max}
       min={city.main.temp_min}
@@ -14,5 +14,6 @@ export default function Cards(props) {
       img={city.weather[0].icon}
       onClose={() => alert(city.name)}
     />
+    </div>
   ))}</div>
 };

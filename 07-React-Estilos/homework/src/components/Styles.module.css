@@ -29,6 +29,10 @@
   .name {
     flex-direction: column;
   }
+
+  .f {
+    margin-top: 10px;
+  }
 }
 
 .head {
