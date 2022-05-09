@@ -1,3 +1,9 @@
-#logoHenry {
+.logoHenry {
   margin-right: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
