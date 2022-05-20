@@ -14,13 +14,13 @@ var valor = document.getElementById('valor');
 // Utilizamos el elemento obtenido arriba para mostrar el State.
 function renderContador() {
   // Obtenemos la propiedad 'contador' de nuestro store:
-  let total = store.getState(contador)
+  let total = store.getState().contador
   // Seteamos el numero obtenido como texto dentro del elemento con id 'valor':
   valor.innerText = total.contador;
 }
 
 // Ejecutamos la funcion 'renderContador':
-// renderContador()
+  renderContador()
 
 
 // Nos subscribimos al store pasandole la misma funcion. Asi cada vez que llegue una accion, ejecutamos la funcion:
