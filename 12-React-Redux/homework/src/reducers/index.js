@@ -5,6 +5,7 @@ import {
   REMOVE_MOVIE_FAVORITE,
 } from "../actions";
 
+
 const initialState = {
   moviesFavorites: [],
   moviesLoaded: [],
@@ -12,12 +13,6 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-  if (action.type === GET_MOVIES) {
-    return {
-      ...state,
-      moviesLoaded: action.payload.Search,
-    };
-  }
 
   if (action.type === GET_MOVIE_DETAIL) {
       return {

@@ -20,6 +20,7 @@ export class Buscador extends Component {
 
   render() {
     const { title } = this.state;
+    
     return (
       <div>
         <h2>Buscador</h2>
@@ -36,10 +37,10 @@ export class Buscador extends Component {
               onChange={(e) => this.handleChange(e)}
             />
           </div>
-          <button type="submit" onClick= {() => {this.props.getMovies()}}>BUSCAR</button>
+          <button type="submit" onClick= {() => {this.props.getMovies("pokemon")}}>BUSCAR</button>
         </form>
         <ul>
-          {console.log(this.props.movies)}
+          {console.log(this.props.movies)};
         </ul>
       </div>
     );
