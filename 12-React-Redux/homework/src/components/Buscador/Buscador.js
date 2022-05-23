@@ -36,10 +36,10 @@ export class Buscador extends Component {
               onChange={(e) => this.handleChange(e)}
             />
           </div>
-          <button type="submit" onClick= {() => {this.props.mapDispatchToProps()}}>BUSCAR</button>
+          <button type="submit" onClick= {() => {this.props.getMovies()}}>BUSCAR</button>
         </form>
         <ul>
-          {console.log(this.props.moviesLoaded)}
+          {console.log(this.props.movies)}
         </ul>
       </div>
     );

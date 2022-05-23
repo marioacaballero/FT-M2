@@ -32,10 +32,7 @@ function contador(state = initialState, action) {
       };
     }
   } else if (action.type === ASYNC) {
-      return setTimeout({
-        ...state,
-        contador: state.contador + 5
-      }, "5000")
+      return setTimeout(state.contador + 1, "5000")
   } else {
     return state;
   }
